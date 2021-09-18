@@ -1,5 +1,5 @@
 {
-  "name": "dotglobal",
+  "name": "globfile",
   "version": "0.0.1",
   "description": "an alternative for dotenv, more configurable and easier to use",
   "main": "test.js",

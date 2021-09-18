@@ -1,16 +1,16 @@
 // Require dotglobal
-const global = require('./index');
+const globfile = require('./index');
 
 // Setup options before initialization
 // (^ Options chosen are default, this is just for demonstration pourposes)
-global.options.globalFile = '.global';
-global.options.nameConvention = true;
+globfile.options.globalFile = '.global';
+globfile.options.nameConvention = true;
 
 // Lex the globalFile provided in options
-global.init();
+globfile.init();
 
 // Search for key in object and log it
-global.find('HI', (data, err) => {
+globfile.find('HI', (data, err) => {
     if(err)
         throw err;
 
@@ -18,7 +18,7 @@ global.find('HI', (data, err) => {
 });
 
 // Append and re-initialize
-global.append('HELLO', 'How are you?', (data, err) => {
+globfile.append('HELLO', 'How are you?', (data, err) => {
     if(err)
         console.log(data, err);
 

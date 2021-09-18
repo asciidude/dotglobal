@@ -42,7 +42,7 @@ module.exports.init = async (callback) => {
 module.exports.append = async (key, value, callback) => {
     if(!this.options.initialized) {
         if(!callback) return;
-        return callback('Error recieved (.append)', Error('dotglobal is not initialized'));
+        return callback('Error recieved (.append)', Error('globfile is not initialized'));
     }
 
     try {
@@ -72,7 +72,7 @@ const filter_arr = (arr, searchKey, callback) => {
 module.exports.find = async (searchKey, callback) => {
     if(!this.options.initialized) {
         if(!callback) return;
-        return callback('Error recieved (.find)', Error('dotglobal is not initialized'));
+        return callback('Error recieved (.find)', Error('globfile is not initialized'));
     }
     
     filter_arr(this.options.tokens, searchKey, (i) => {
