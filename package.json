@@ -7,7 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "globfile",
     "dotglobal",
+    "global-variables",
+    "dotenv",
     "global",
     "variables",
     "variable",
