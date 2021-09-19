@@ -8,8 +8,6 @@ module.exports.options = {
     tokens: []
 }
 
-module.exports.tokens = [];
-
 const lexer = moo.compile({
     whitespace: /[ \t]+/,
     comment: /#.*?$/,
@@ -46,7 +44,7 @@ module.exports.append = async (key, value, callback) => {
     }
 
     try {
-        await fs.appendFileSync(this.options.globalFile, this.options.nameConvention ? `\r\n${key}: "${value}"` : `\r\n${key.toUpperCase()}: "${value}"`, 'utf-8');
+        await fs.appendFileSync(this.options.globalFile, this.options.nameConvention ? `\r\n${key.toUpperCase()}: "${value}"` : `\r\n${key}: "${value}"`, 'utf-8');
 
         this.options.tokens = [];
         this.init();

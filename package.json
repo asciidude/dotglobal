@@ -1,6 +1,6 @@
 {
   "name": "globfile",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "an alternative for dotenv, more configurable and easier to use",
   "main": "index.js",
   "scripts": {
