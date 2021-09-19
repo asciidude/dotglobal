@@ -1,8 +1,8 @@
 {
   "name": "globfile",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "an alternative for dotenv, more configurable and easier to use",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +20,6 @@
   "license": "MIT",
   "dependencies": {
     "moo": "^0.5.1"
-  }
+  },
+  "homepage": "https://github.com/asciidude/globfile"
 }

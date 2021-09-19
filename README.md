@@ -65,9 +65,9 @@ globfile.append('HELLO', 'How are you?', (data, err) => {
 # documentation
 
 ## functions
-`global#init()` lex the global file, this is required for globfile to work\
-`global#find()` find a value in the tokens based off a key, will <b>always</b> return as string\
-`global#append()` append to the global file (starts with newline)
+`globfile#init()` lex the global file, this is required for globfile to work\
+`globfile#find()` find a value in the tokens based off a key, will <b>always</b> return as string\
+`globfile#append()` append to the global file (starts with newline)
 
 ## options
 `globalFile ''` the file to use for globfile to work\
